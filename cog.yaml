@@ -1,0 +1,11 @@
+build:
+  gpu: true
+  cuda: "11.6"
+  python_version: "3.10"
+  python_packages:
+    - "git+https://github.com/huggingface/diffusers.git"
+    - "git+https://github.com/huggingface/transformers"
+    - "accelerate==0.15.0"
+    - "safetensors==0.2.8"
+
+predict: "predict.py:Predictor"
